@@ -1,0 +1,25 @@
+html,
+body {
+	margin: 0;
+	padding: 0;
+    background: url('../assets/images/background.png');
+    font-family: 'Trebuchet MS';
+}
+
+:root{
+	--blue: #1698D9;
+	--white-gray: #F2F2F2;
+	--white: white;
+    --black: #000000;
+    --gray: #666666;
+    --selectCard: #D91667;
+    --visitCard: #2EA8E6;
+    --selectVisitCard: #E52E7A;
+    --light-gray: #B3B3B3;
+}
+
+@font-face {
+    font-family: 'Trebuchet MS';
+    src: url('../assets/fonts/trebuc.ttf') format('ttf');
+    font-style: normal;
+}

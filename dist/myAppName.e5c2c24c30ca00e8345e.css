@@ -1,0 +1,340 @@
+@import url(https://fonts.googleapis.com/css2?family=Exo+2:wght@100&display=swap);
+.app__container__oO8cO{
+    height: 100vh;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.app__productWrapper__ZizF4{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    align-items: center;
+    grid-gap: 0 80px;
+    grid-template-areas:
+            "card1 card2 card3";
+}
+
+@media screen and (max-width: 1280px){
+    .app__productWrapper__ZizF4{
+        grid-template-columns: 1fr 1fr;
+        justify-items: center;
+        align-items: center;
+        grid-template-areas:
+            "card1 card1"
+            "card2 card3";
+    }
+}
+
+@media screen and (max-width: 768px){
+    .app__container__oO8cO{
+        display: block;
+    }
+    .app__productWrapper__ZizF4{
+        grid-template-columns: 1fr;
+        justify-items: center;
+        align-items: center;
+        grid-template-areas:
+            "card1"
+            "card2"
+            "card3"
+    }
+}
+html,
+body {
+	margin: 0;
+	padding: 0;
+    background: url(assets/images/background.png);
+    font-family: 'Trebuchet MS';
+}
+
+:root{
+	--blue: #1698D9;
+	--white-gray: #F2F2F2;
+	--white: white;
+    --black: #000000;
+    --gray: #666666;
+    --selectCard: #D91667;
+    --visitCard: #2EA8E6;
+    --selectVisitCard: #E52E7A;
+    --light-gray: #B3B3B3;
+}
+
+@font-face {
+    font-family: 'Trebuchet MS';
+    src: url(fonts/trebuc.ttf) format('ttf');
+    font-style: normal;
+}
+.Card__card__rUtWB{
+    width: 320px;
+}
+
+.Card__cardWrapper__YhW3D{
+    height: 480px;
+    position: relative;
+    overflow: hidden;
+    font-family: 'Trebuchet MS';
+    cursor: pointer;
+}
+
+.Card__titleBox__EzV1t{
+    display: flex;
+    width: 100%;
+    height: 10%;
+    justify-content: end;
+}
+
+.Card__triangleLine__oS1bj{
+    width: 100px;
+    height: 100px;
+    transform: rotate(45deg);
+    position: absolute;
+    left: -6px;
+    top: 19px;
+    background: var(--white-gray);
+    z-index: 2;
+    box-sizing: border-box;
+}
+
+.Card__triangleLineSelected__MkrIF{
+    border: 4px solid var(--selectCard);
+}
+
+.Card__triangleLineNoSelected__xHGl3{
+    border: 4px solid var(--blue);
+}
+
+.Card__triangleLineVisit__l1WK8{
+    border: 4px solid var(--visitCard);
+}
+
+.Card__triangleLineSelectVisit__vgesa{
+    border: 4px solid var(--selectVisitCard);
+}
+
+.Card__triangleLineNoPresence__cYzDa{
+    border: 4px solid var(--light-gray);
+}
+
+.Card__title__jA5n7{
+    width: 85%;
+    position: relative;
+    z-index: 5;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: var(--gray);
+}
+
+.Card__title__jA5n7 div{
+    margin-top: 17px;
+    padding-left: 7px;
+}
+
+.Card__title__jA5n7{
+    border-top-right-radius: 12px;
+    background: var(--white-gray);
+}
+
+.Card__titleSelect__i18zJ{
+    border: 4px solid var(--selectCard);
+    border-bottom: none;
+    border-left: none;
+}
+
+.Card__titleNoSelect__ai2Hj{
+    border: 4px solid var(--blue);
+    border-bottom: none;
+    border-left: none;
+}
+
+.Card__titleVisit__uEcrL{
+    border: 4px solid var(--visitCard);
+    border-bottom: none;
+    border-left: none;
+}
+
+.Card__titleSelectVisit__uPdZx{
+    border: 4px solid var(--selectVisitCard);
+    border-bottom: none;
+    border-left: none;
+}
+
+.Card__titleNoPresence__K4TOu{
+    border: 4px solid var(--light-gray);
+    border-bottom: none;
+    border-left: none;
+    color: var(--light-gray);
+}
+
+.Card__contentBox__Dy7sm{
+    box-sizing: border-box;
+    background: var(--white-gray);
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+    width: 100%;
+    height: 90%;
+    z-index: 5;
+    position: relative;
+    margin-top: -4px;   
+    overflow: hidden;
+}
+
+.Card__contentBoxSelect__EzZaE{
+    border: 4px solid var(--selectCard);
+    border-top: none;
+}
+
+.Card__contentBoxNoSelect__u4sf6{
+    border: 4px solid var(--blue);
+    border-top: none;
+}
+
+.Card__contentBoxVisit__I8lnh{
+    border: 4px solid var(--visitCard);
+    border-top: none;
+}
+
+.Card__contentBoxSelectVisit__nghTW{
+    border: 4px solid var(--selectVisitCard);
+    border-top: none;
+}
+
+.Card__contentBoxNoPresence__wBUIO{
+    border: 4px solid var(--light-gray);
+    border-top: none;
+}
+
+.Card__description__vTC0x{
+    padding-left: 44px;
+}
+
+.Card__name__mRAqW{
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 56px;
+    color: var(--black);
+    padding-top: 5px;
+}
+
+.Card__taste__GAkWd{
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    color: var(--black);
+    margin-bottom: 15px;
+}
+
+.Card__text__Nuy1i{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    color: var(--gray);
+}
+
+.Card__text__Nuy1i span{
+    font-weight: 700;
+}
+
+.Card__imgWrapper__YbBBW{
+    position: absolute;
+    bottom: -5px;
+}
+
+.Card__circle__Hp4eM{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    color: var(--white);
+    font-weight: 400;
+    font-size: 21px;
+    line-height: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: absolute;
+    bottom: 16px;
+    right: 16px;
+}
+
+.Card__circle__Hp4eM span{
+    display: block;
+    font-size: 42px;
+    margin: 10px 0;
+}
+
+.Card__circleSelect__fhdW6{
+    background: var(--selectCard);
+}
+
+.Card__circleNoSelect__tDeQI{
+    background: var(--blue);
+}
+
+.Card__circleVisit__cbkjV{
+    background: var(--visitCard);
+}
+
+.Card__circleSeletVisit__NR6wt{
+    background: var(--selectVisitCard);
+}
+
+.Card__noPresence__v_8jz{
+    color: var(--light-gray);
+    cursor: auto;
+}
+
+.Card__noPresenceImg__IJesC{
+    opacity: 0.5;
+}
+
+.Card__noPresenceCircle__B3C7G{
+    background: var(--light-gray);
+}
+
+
+.Card__cardDescription__N6Hbn{
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 15px;
+    color: var(--white);
+    margin-top: 15px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.Card__noPresenceDescription__uAUK0{
+    color: #FFFF66;
+}
+
+.Card__btn__drBbi{
+    background: none;
+    border: none;
+    color: #22A7E9;
+    cursor: pointer;
+}
+
+.Card__card1__ZKoV1{
+    grid-area: card1;
+}
+
+.Card__card2__MhKgW{
+    grid-area: card2;
+}
+
+.Card__card3__oZ8YZ{
+    grid-area: card3;
+}
+.Header__header__Qp5xk{
+    text-align: center;
+    color: var(--white);
+    text-shadow: 0px 1px 1px #000000;
+    font-family: 'Exo 2', sans-serif;
+    font-size: 36px;
+    line-height: 44px;
+    margin-bottom: 25px;
+}

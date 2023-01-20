@@ -1,0 +1,263 @@
+@import '../../styles/global.css';
+
+.card{
+    width: 320px;
+}
+
+.cardWrapper{
+    height: 480px;
+    position: relative;
+    overflow: hidden;
+    font-family: 'Trebuchet MS';
+    cursor: pointer;
+}
+
+.titleBox{
+    display: flex;
+    width: 100%;
+    height: 10%;
+    justify-content: end;
+}
+
+.triangleLine{
+    width: 100px;
+    height: 100px;
+    transform: rotate(45deg);
+    position: absolute;
+    left: -6px;
+    top: 19px;
+    background: var(--white-gray);
+    z-index: 2;
+    box-sizing: border-box;
+}
+
+.triangleLineSelected{
+    border: 4px solid var(--selectCard);
+}
+
+.triangleLineNoSelected{
+    border: 4px solid var(--blue);
+}
+
+.triangleLineVisit{
+    border: 4px solid var(--visitCard);
+}
+
+.triangleLineSelectVisit{
+    border: 4px solid var(--selectVisitCard);
+}
+
+.triangleLineNoPresence{
+    border: 4px solid var(--light-gray);
+}
+
+.title{
+    width: 85%;
+    position: relative;
+    z-index: 5;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: var(--gray);
+}
+
+.title div{
+    margin-top: 17px;
+    padding-left: 7px;
+}
+
+.title{
+    border-top-right-radius: 12px;
+    background: var(--white-gray);
+}
+
+.titleSelect{
+    border: 4px solid var(--selectCard);
+    border-bottom: none;
+    border-left: none;
+}
+
+.titleNoSelect{
+    border: 4px solid var(--blue);
+    border-bottom: none;
+    border-left: none;
+}
+
+.titleVisit{
+    border: 4px solid var(--visitCard);
+    border-bottom: none;
+    border-left: none;
+}
+
+.titleSelectVisit{
+    border: 4px solid var(--selectVisitCard);
+    border-bottom: none;
+    border-left: none;
+}
+
+.titleNoPresence{
+    border: 4px solid var(--light-gray);
+    border-bottom: none;
+    border-left: none;
+    color: var(--light-gray);
+}
+
+.contentBox{
+    box-sizing: border-box;
+    background: var(--white-gray);
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+    width: 100%;
+    height: 90%;
+    z-index: 5;
+    position: relative;
+    margin-top: -4px;   
+    overflow: hidden;
+}
+
+.contentBoxSelect{
+    border: 4px solid var(--selectCard);
+    border-top: none;
+}
+
+.contentBoxNoSelect{
+    border: 4px solid var(--blue);
+    border-top: none;
+}
+
+.contentBoxVisit{
+    border: 4px solid var(--visitCard);
+    border-top: none;
+}
+
+.contentBoxSelectVisit{
+    border: 4px solid var(--selectVisitCard);
+    border-top: none;
+}
+
+.contentBoxNoPresence{
+    border: 4px solid var(--light-gray);
+    border-top: none;
+}
+
+.description{
+    padding-left: 44px;
+}
+
+.name{
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 56px;
+    color: var(--black);
+    padding-top: 5px;
+}
+
+.taste{
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    color: var(--black);
+    margin-bottom: 15px;
+}
+
+.text{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    color: var(--gray);
+}
+
+.text span{
+    font-weight: 700;
+}
+
+.imgWrapper{
+    position: absolute;
+    bottom: -5px;
+}
+
+.circle{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    color: var(--white);
+    font-weight: 400;
+    font-size: 21px;
+    line-height: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: absolute;
+    bottom: 16px;
+    right: 16px;
+}
+
+.circle span{
+    display: block;
+    font-size: 42px;
+    margin: 10px 0;
+}
+
+.circleSelect{
+    background: var(--selectCard);
+}
+
+.circleNoSelect{
+    background: var(--blue);
+}
+
+.circleVisit{
+    background: var(--visitCard);
+}
+
+.circleSeletVisit{
+    background: var(--selectVisitCard);
+}
+
+.noPresence{
+    color: var(--light-gray);
+    cursor: auto;
+}
+
+.noPresenceImg{
+    opacity: 0.5;
+}
+
+.noPresenceCircle{
+    background: var(--light-gray);
+}
+
+
+.cardDescription{
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 15px;
+    color: var(--white);
+    margin-top: 15px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.noPresenceDescription{
+    color: #FFFF66;
+}
+
+.btn{
+    background: none;
+    border: none;
+    color: #22A7E9;
+    cursor: pointer;
+}
+
+.card1{
+    grid-area: card1;
+}
+
+.card2{
+    grid-area: card2;
+}
+
+.card3{
+    grid-area: card3;
+}
